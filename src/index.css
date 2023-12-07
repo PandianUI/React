@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::placeholder {
+  color: #9d9d9d;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12-18 */
+  color: #9d9d9d;
+}
+
+html, body {
+  height: 100%;
+  background: #f2f5f7;
+}
+
+div#root {
+  height: 100%;
+}
+
+
+
+
+
+
+.formcreate {
+  @apply flex flex-col justify-center items-center h-full;
+}
+
+.form_container {
+  @apply bg-white text-justify p-[32px] w-[577px] max-w-[577px] rounded-md border border-[#e6e6e6]
+}
+
+.form_container > h2 {
+  @apply font-medium pb-[26px];
+}
+
+.form_container > h2 span {
+  @apply float-right;
+}
+
+.form_container form div label {
+  @apply block pb-1 font-medium text-[#2f2f2f];
+}
+
+.two_column {
+  @apply pb-6 flex gap-y-5 gap-x-5;
+}
+
+.two_column > div {
+  @apply grow shrink basis-0; 
+}
+
+.two_radio {
+  @apply flex justify-start h-full text-sm text-[#909090];
+}
+
+.form_container form .two_radio input {
+  @apply w-4 h-4 text-blue-600 bg-[#D8D8D8] border-[#D8D8D8] focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
+}
+
+.two_radio div {
+  @apply inline-flex items-center pr-[16px] gap-1;
+}
+
+
+.apply_section {
+  @apply flex text-justify p-[24px] rounded-md justify-center flex-wrap gap-[30px];
+}
+
+.apply_section > div {
+  @apply flex gap-2 w-[550px] bg-white p-[24px];
+}
+
+.net_container div img {
+  @apply w-[48px] rounded-md;
+}
+
+.net_container h2 {
+  @apply text-[24px] text-left leading-6;
+}
+
+.net_container h2 span {
+  @apply block text-[16px];
+}
+
+.net_container p {
+  @apply text-[#7A7A7A] pb-[20px] text-[16px];
+}
+
+.net_container ul li {
+  @apply text-[#212427] pb-[8px] text-[16px];
+}
+
+.net_container ul {
+  @apply pb-[22px]
+}
